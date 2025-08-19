@@ -613,3 +613,7 @@
     border-color: var(--bs-primary) !important; /* Use the new primary color for borders */
 }
 
+.dropdown-menu a.dropdown-item:focus {
+    background-color: var(--bs-primary) !important; /* Use the new primary color for dropdown focus */
+}
+
