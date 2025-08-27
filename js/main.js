@@ -25,6 +25,19 @@
         }
     });
 
+    // shrink-logo.js
+
+window.addEventListener("scroll", function() {
+  const logo = document.querySelector(".logo-img");
+  if (window.scrollY > 50) {
+    logo.classList.add("logo-small");
+  } else {
+    logo.classList.remove("logo-small");
+  }
+});
+
+
+
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({

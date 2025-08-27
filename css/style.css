@@ -171,7 +171,7 @@
     align-items: start;
     justify-content: center;
     text-align: left;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0);
     padding: 3rem;
     padding-left: 11rem;
     z-index: 1;
@@ -616,4 +616,34 @@
 .dropdown-menu a.dropdown-item:focus {
     background-color: var(--bs-primary) !important; /* Use the new primary color for dropdown focus */
 }
+
+/* Default logo size */
+.logo-img {
+    max-width: 150px;    /* Big logo */
+    transition: max-width 0.3s ease, padding 0.3s ease;
+}
+
+/* Shrunk navbar */
+.logo-small {
+    max-width: 80px;   /* Small logo after scroll */
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-height: 50px;   /* smaller logo on mobile */
+    }
+
+}
+
+.carousel-caption h1{
+    color: black !important;
+    font-size: 60px !important;
+}
+
+.carousel-caption p{
+    color: black;
+}
+
 
