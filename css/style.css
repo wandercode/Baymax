@@ -575,7 +575,7 @@
 }
 
 :root {
-  --bs-primary: #2E6F40; /* New primary color */
+  --bs-primary: #5B6467; /* New primary color */
 
 }
 
@@ -617,3 +617,20 @@
     background-color: var(--bs-primary) !important; /* Use the new primary color for dropdown focus */
 }
 
+.carousel-caption p{
+    font-size: clamp(1rem, 0.9rem + 0.8vw, 1.25rem);
+    line-height: 1.7;
+    max-width: 70ch;       /* keeps lines at a readable length */
+    margin: 0 1rem 1rem;   /* breathable side padding on small screens */
+    word-break: break-word;
+}
+
+@media (max-width: 480px) {
+  p { margin: 0 0 0.875rem; }
+}
+
+.service-inner .img-fluid  {
+    width: 400px !important;
+    height: 380px !important;
+    object-fit: cover;
+}

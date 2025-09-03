@@ -82,6 +82,18 @@
             '<i class="bi bi-arrow-right"></i>'
         ]
     });
+
+    // form button
+    document.getElementById("contactToggle").addEventListener("click", function () {
+    document.getElementById("contactForm").classList.remove("d-none");
+    this.classList.add("d-none"); // hide button
+    });
+
+    document.getElementById("cancelBtn").addEventListener("click", function () {
+    document.getElementById("contactForm").classList.add("d-none");
+    document.getElementById("contactToggle").classList.remove("d-none"); // show button again
+   });
+
     
 })(jQuery);
 
