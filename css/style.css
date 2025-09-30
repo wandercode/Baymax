@@ -749,4 +749,34 @@
     background-color: #9CD8E9;
 }
 
+/* Make carousel full height of screen */
+#header-carousel,
+#header-carousel .carousel-item,
+#header-carousel .carousel-item img {
+    height: 100vh;             /* full viewport height */
+}
+
+/* Image scaling */
+#header-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* fills container, crops extra */
+    object-position: center;   /* centers the crop */
+}
+
+@media (max-width: 992px) {
+  #header-carousel,
+  #header-carousel .carousel-item,
+  #header-carousel .carousel-item img {
+      height: 70vh;   /* reduce for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  #header-carousel,
+  #header-carousel .carousel-item,
+  #header-carousel .carousel-item img {
+      height: 60vh;   /* reduce for small mobiles */
+  }
+}
 
