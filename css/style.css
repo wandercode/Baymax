@@ -713,4 +713,40 @@
   }
 }
 
+.testimonial-img {
+    width: 450px !important;       /* Increase image size */
+    height: 250px !important;
+    object-fit: cover;  /* Keeps proper crop */
+    border-radius: 50%; /* Make it circular */
+  }
+
+.testimonial-item {
+    text-align: center; 
+  }
+
+@media (max-width: 768px) {
+.testimonial-img {
+      width: 350px !important;   /* Smaller on mobile */
+      height: 60px !important;
+    }
+  }
+
+
+.p1 {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #25D366;
+    font-size: 30px !important;
+}
+
+.service p{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+#service {
+    background-color: #9CD8E9;
+}
+
 
